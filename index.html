@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Running Dot</title>
+</head>
+
+<body class="container">
+  <div class="box" id="box">
+    <div class="dot" id="dot"></div>
+  </div>
+
+  <div class="btn-container">
+    <button id="start">START</button>
+    <button id="pause">PAUSE</button>
+    <button id="restart">RESTART</button>
+
+    <label for="loop">LOOP</label>
+    <input type="checkbox" name="loop" id="loop" value="true" />
+  </div>
+  <div class="time-box">
+    <div class="timeBtn" id="decrease" onclick="decreaseTime()">- -</div>
+    <input type="number" name="time" id="time" min="1" value="5" />
+    <div class="timeBtn" id="increase" onclick="increaseTime()">++</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
